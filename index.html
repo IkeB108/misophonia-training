@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Trigger sounds</title>
+    <link rel="stylesheet" href="style.css">
+    <div id="p5_loading" class="loadingclass"></div>
+    <script src="libraries/p5.min.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.min.js" type="text/javascript"></script>
+    <script src="libraries/p5.collide2d.js" type="text/javascript"></script>
+    <script src="libraries/ike.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+  </head>
+  <body>
+    <p id="soundLoadingText">Files have not started loading</p>
+  </body>
+  <ul>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="door"><label for="door">Door</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="dogs"><label for="dogs">Dogs</label></input></li>
+    <!--<li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="beep"><label for="beep">Beep</label></input></li> -->
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="chew"><label for="chew">Chewing</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="cough"><label for="cough">Coughing</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="slurp"><label for="slurp">Slurping</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="sneeze"><label for="sneeze">Sneezing</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="sniffle"><label for="sniffle">Sniffling</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="snore"><label for="snore">Snoring</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="swallow"><label for="swallow">Swallowing</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="throatclear"><label for="throatclear">Throat clearing</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="yawn"><label for="yawn">Yawning</label></input></li>
+    <li><input onchange="myCheckedEvent(this)" type="checkbox" value="1" id="mindfulness"><label for="mindfulness">Mindfulness</label></input></li>
+  </ul>
+</html>

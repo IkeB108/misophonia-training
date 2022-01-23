@@ -34,8 +34,13 @@ function preload() {
   loadedSounds = []
   loadedSoundCount = 0;
   for(var i = 0; i < soundsToLoad.length; i ++){
-    if(soundsToLoad[i].length > 1)
-    loadedSounds.push(loadSound(soundsToLoad[i] + '.mp3', loadedSoundCallback, failLoadCallback) )
+    if(soundsToLoad[i].length > 1){
+      loadedSounds.push( new Audio(soundsToLoad[i] + '.mp3', loadedSoundCallback, failLoadCallback) )
+
+      loadedSounds[loadedSounds.length-1].file = soundsToLoad[i] + '.mp3'
+
+    }
+
   }
   /*loadedSounds = [
     loadSound('door.mp3'),
@@ -113,7 +118,9 @@ function clickCheckNone(){
     soundGroups[i].checkbox.checked = false;
   }
   for(var i in allSounds){
-    allSounds[i].stop();
+    //allSounds[i].stop();
+    allSounds[i].pause();
+    allSounds[i].currentTime = 0;
   }
 }
 function clickCheckDefault(){
@@ -127,13 +134,17 @@ function myCheckedEvent(id){
       allSounds['mindfulness'].play();
     }
     if(id.id == 'mindfulness' && !id.checked){
-      allSounds['mindfulness'].stop();
+      //allSounds['mindfulness'].stop();
+      allSounds['mindfulness'].pause();
+      allSounds['mindfulness'].currentTime = 0;
     }
     if(id.id != 'mindfulness' && !id.checked){
       //if user has unchecked any sound group, stop all sounds from that group.
       var soundsToStop = soundGroups[id.id].sounds
       for(var i = 0; i < soundsToStop.length; i ++){
-        allSounds[soundsToStop[i]].stop();
+        //allSounds[soundsToStop[i]].stop();
+        allSounds[soundsToStop[i]].pause();
+        allSounds[soundsToStop[i]].currentTime = 0;
       }
     }
   }

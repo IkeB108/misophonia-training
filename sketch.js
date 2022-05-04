@@ -1,4 +1,7 @@
 /*
+TO MAKE MORE SOUNDS THE DEFAULT:
+Go to the soundGroups array in setup() and change the checkDefault property to true
+
 TO ADD NEW SOUNDS:
 Step 1. Reference the sound files in the loadedSounds array below
 Step 2. Create a new soundGroup in the soundGroups object in setup.
@@ -84,8 +87,8 @@ function setup() {
     'sniffle':{'sounds':"sniffle1 sniffle2", 'minRTime':5, 'maxRTime':10,'checkDefault':true},
     'snore':{'sounds':"snore", 'minRTime':10, 'maxRTime':50,'checkDefault':true},
     'swallow':{'sounds':"swallow", 'minRTime':5, 'maxRTime':10,'checkDefault':false},
-    'throatclear':{'sounds':"throatclear-1 throatclear-2 throatclear-3", 'minRTime':5, 'maxRTime':10,'checkDefault':false},
-    'yawn':{'sounds':"yawn1 yawn2 yawn3", 'minRTime':5, 'maxRTime':10,'checkDefault':false},
+    'throatclear':{'sounds':"throatclear-1 throatclear-2 throatclear-3", 'minRTime':5, 'maxRTime':10,'checkDefault':true},
+    'yawn':{'sounds':"yawn1 yawn2 yawn3", 'minRTime':5, 'maxRTime':10,'checkDefault':true},
 
     //'beep':{'sounds':['300','400','500','600'],'minRTime':1,'maxRTime':2,'checkDefault':true}
   }

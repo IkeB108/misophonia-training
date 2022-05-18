@@ -176,7 +176,7 @@ function draw() {
 
 
 // Set the date we're counting down to
-var countDownDate = Date.parse("t + 5 seconds").getTime();
+var countDownDate = Date.parse("t + 5 minutes").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

@@ -88,7 +88,7 @@ function setup() {
     'snore':{'sounds':"snore", 'minRTime':10, 'maxRTime':50,'checkDefault':true},
     'swallow':{'sounds':"swallow", 'minRTime':5, 'maxRTime':10,'checkDefault':false},
     'throatclear':{'sounds':"throatclear-1 throatclear-2 throatclear-3", 'minRTime':5, 'maxRTime':10,'checkDefault':true},
-    'yawn':{'sounds':"yawn1 yawn2 yawn3", 'minRTime':5, 'maxRTime':10,'checkDefault':true},
+    'yawn':{'sounds':"yawn1 yawn2 yawn3", 'minRTime':15, 'maxRTime':25,'checkDefault':true},
 
     //'beep':{'sounds':['300','400','500','600'],'minRTime':1,'maxRTime':2,'checkDefault':true}
   }

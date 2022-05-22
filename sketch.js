@@ -97,7 +97,7 @@ function setup() {
     soundGroups[i].lastPlay = 0;
     soundGroups[i].timeToNextPlay = random(soundGroups[i].minRTime, soundGroups[i].maxRTime) * 70 //in frames
     soundGroups[i].checkbox = document.getElementById(i) //use .checked to check if checked
-    if(soundGroups[i].checkDefault)soundGroups[i].checkbox.checked = true;
+    //if(soundGroups[i].checkDefault)soundGroups[i].checkbox.checked = true;
     soundGroups[i].sounds = soundGroups[i].sounds.split(' ')
   }
   if(soundGroups['mindfulness'].checkDefault)allSounds['mindfulness'].play();
